@@ -5,22 +5,22 @@
 class ActionsTest < Formula
   desc ""
   homepage "https://github.com/brucemacd/test-actions"
-  version "0.0.8"
+  version "0.0.9"
   license "MIT"
   depends_on :macos
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/brucemacd/releases/raw/main/test-actions_0.0.8_darwin_arm64.tar.gz"
-      sha256 "d1fe9f9d548a8e8a6d73dd3dd43764979a03f3117dd38909aa5f22c2f6c6de30"
+      url "https://github.com/BruceMacD/test-actions/releases/download/0.0.9/test-actions_0.0.9_darwin_arm64.tar.gz"
+      sha256 "099d45cde5e42bc6484584a19f17d8cdb2e3026deafb68162fd932c6c05be1fd"
 
       def install
         bin.install "actionsTest"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/brucemacd/releases/raw/main/test-actions_0.0.8_darwin_amd64.tar.gz"
-      sha256 "843683f237b0cb1b92c361e374074d79bd6e6893ad58fc29cc12a664ca5f3774"
+      url "https://github.com/BruceMacD/test-actions/releases/download/0.0.9/test-actions_0.0.9_darwin_amd64.tar.gz"
+      sha256 "e10de790ec79044a09e77b18e58a64d554badff21fadfd67bb179e2873792974"
 
       def install
         bin.install "actionsTest"
